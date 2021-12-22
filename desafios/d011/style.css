@@ -15,7 +15,6 @@ body{
     
 }
 
-
 #conteudo {
     background-image: url(imagens/astronauta.png);
     position: absolute;
@@ -25,8 +24,39 @@ body{
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+    
 }
 
 
-
-
+#conteudo{
+    width: 400px;
+    height: 400px;
+    
+    -webkit-animation: MoveUpDown 2s linear infinite;
+          animation: MoveUpDown 2s linear infinite;
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -50%);
+    }
+    
+       
+    @-webkit-keyframes MoveUpDown {
+        0%,
+        100% {
+          top: 400px;
+        }
+        50% {
+          top: 340px;
+        }
+      }
+      
+      @keyframes MoveUpDown {
+        0%,
+        100% {
+          top: 400px;
+        }
+        50% {
+          top: 340px;
+        }
+      }
